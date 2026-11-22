@@ -1,5 +1,7 @@
 # Survol des Écrins
 
+![La Meije vue depuis le col du Lautaret, dans le simulateur](docs/images/meije-depuis-le-lautaret.jpg)
+
 **Un simulateur de vol tranquille, en planeur, au-dessus des Alpes du Dauphiné, dans le navigateur.**
 
 Le relief est celui du LiDAR HD de l'IGN, précis au mètre, et le sol est habillé des orthophotos aériennes à 20 cm. Tout est chargé en direct depuis [cartes.gouv.fr](https://cartes.gouv.fr) pendant le vol : il n'y a rien à installer, et aucun serveur applicatif. On reconnaît les sommets, les glaciers, les villages et les refuges comme depuis un vrai vol.
