@@ -1,0 +1,234 @@
+{
+ "places": [
+  {
+   "name": "Barre des Écrins",
+   "kind": "sommet",
+   "alt": 4102,
+   "desc": "Point culminant du massif. Première ascension en 1864 par Whymper, Moore, Walker et leurs guides.",
+   "lat": 44.9221,
+   "lon": 6.3597
+  },
+  {
+   "name": "Dôme de Neige des Écrins",
+   "kind": "sommet",
+   "alt": 4015,
+   "desc": "Le 4000 le plus fréquenté du massif, gravi depuis le refuge des Écrins.",
+   "lat": 44.925,
+   "lon": 6.354
+  },
+  {
+   "name": "La Meije",
+   "kind": "sommet",
+   "alt": 3983,
+   "desc": "Le Grand Pic, dernier grand sommet des Alpes gravi, en 1877, par Boileau de Castelnau et les Gaspard.",
+   "lat": 45.0055,
+   "lon": 6.3082
+  },
+  {
+   "name": "Ailefroide",
+   "kind": "sommet",
+   "alt": 3954,
+   "desc": "Massive montagne à plusieurs sommets entre le Glacier Noir et le vallon du Sélé.",
+   "lat": 44.884,
+   "lon": 6.3681
+  },
+  {
+   "name": "Mont Pelvoux",
+   "kind": "sommet",
+   "alt": 3943,
+   "desc": "Il domine Ailefroide et la Vallouise ; longtemps pris pour le point culminant du massif.",
+   "lat": 44.8982,
+   "lon": 6.4097
+  },
+  {
+   "name": "Pic Sans Nom",
+   "kind": "sommet",
+   "alt": 3913,
+   "desc": "Sa grande paroi nord domine le Glacier Noir.",
+   "lat": 44.8936,
+   "lon": 6.388
+  },
+  {
+   "name": "Le Râteau",
+   "kind": "sommet",
+   "alt": 3809,
+   "desc": "Arête crénelée à l'ouest de la Meije, au-dessus du glacier de la Girose.",
+   "lat": 45.0003,
+   "lon": 6.2626
+  },
+  {
+   "name": "La Grande Ruine",
+   "kind": "sommet",
+   "alt": 3765,
+   "desc": "Sommet central du massif, avec une vue large sur la Meije et la Barre.",
+   "lat": 44.9748,
+   "lon": 6.3328
+  },
+  {
+   "name": "Roche Faurio",
+   "kind": "sommet",
+   "alt": 3730,
+   "desc": "Sommet facile au-dessus du Glacier Blanc, face à la Barre des Écrins.",
+   "lat": 44.9324,
+   "lon": 6.3797
+  },
+  {
+   "name": "Les Bans",
+   "kind": "sommet",
+   "alt": 3669,
+   "desc": "Sommet du sud-est du massif, entre Vallouise et Valgaudemar.",
+   "lat": 44.8414,
+   "lon": 6.3433
+  },
+  {
+   "name": "Montagne des Agneaux",
+   "kind": "sommet",
+   "alt": 3664,
+   "desc": "Belvédère sur le Glacier Blanc, au-dessus du Monêtier.",
+   "lat": 44.9497,
+   "lon": 6.4087
+  },
+  {
+   "name": "L'Olan",
+   "kind": "sommet",
+   "alt": 3564,
+   "desc": "Sommet isolé du sud-ouest du massif, entre Valgaudemar et Valjouffrey.",
+   "lat": 44.8622,
+   "lon": 6.2086
+  },
+  {
+   "name": "Le Sirac",
+   "kind": "sommet",
+   "alt": 3441,
+   "desc": "Sommet du sud du massif, au-dessus du Champsaur.",
+   "lat": 44.7848,
+   "lon": 6.3216
+  },
+  {
+   "name": "La Grave",
+   "kind": "village",
+   "alt": 1480,
+   "desc": "Village au pied de la face nord de la Meije, sur la route du Lautaret.",
+   "lat": 45.0457,
+   "lon": 6.306
+  },
+  {
+   "name": "Villar-d'Arêne",
+   "kind": "village",
+   "alt": 1650,
+   "desc": "Village à l'entrée du vallon de la Romanche, vers l'Alpe de Villar-d'Arêne.",
+   "lat": 45.0392,
+   "lon": 6.3388
+  },
+  {
+   "name": "Col du Lautaret",
+   "kind": "col",
+   "alt": 2058,
+   "desc": "Col entre Oisans et Briançonnais, avec son jardin alpin.",
+   "lat": 45.0349,
+   "lon": 6.4048
+  },
+  {
+   "name": "La Bérarde",
+   "kind": "village",
+   "alt": 1711,
+   "desc": "Hameau au fond du Vénéon, point de départ historique des courses du massif, durement touché par la crue de juin 2024.",
+   "lat": 44.932,
+   "lon": 6.2928
+  },
+  {
+   "name": "Saint-Christophe-en-Oisans",
+   "kind": "village",
+   "alt": 1470,
+   "desc": "Commune au cœur du Vénéon, l'une des plus étendues de France.",
+   "lat": 44.9569,
+   "lon": 6.1781
+  },
+  {
+   "name": "Ailefroide (hameau)",
+   "kind": "village",
+   "alt": 1510,
+   "desc": "Hameau d'alpinisme et d'escalade au pied du Pelvoux.",
+   "lat": 44.8858,
+   "lon": 6.4436
+  },
+  {
+   "name": "Pré de Madame Carle",
+   "kind": "lieu",
+   "alt": 1874,
+   "desc": "Plaine au débouché du Glacier Blanc et du Glacier Noir.",
+   "lat": 44.9112,
+   "lon": 6.4204
+  },
+  {
+   "name": "Vallouise",
+   "kind": "village",
+   "alt": 1170,
+   "desc": "Village de la vallée de la Gyronde, porte d'entrée est du massif.",
+   "lat": 44.8459,
+   "lon": 6.4879
+  },
+  {
+   "name": "Le Monêtier-les-Bains",
+   "kind": "village",
+   "alt": 1495,
+   "desc": "Village de la Guisane, sur la route du Lautaret à Briançon.",
+   "lat": 44.9757,
+   "lon": 6.5087
+  },
+  {
+   "name": "Glacier Blanc",
+   "kind": "glacier",
+   "alt": null,
+   "desc": "L'un des plus grands glaciers du massif ; il a beaucoup reculé depuis le XIXᵉ siècle.",
+   "lat": 44.935,
+   "lon": 6.395
+  },
+  {
+   "name": "Glacier Noir",
+   "kind": "glacier",
+   "alt": null,
+   "desc": "Glacier couvert de débris rocheux, au pied de la face sud de la Barre des Écrins.",
+   "lat": 44.905,
+   "lon": 6.395
+  },
+  {
+   "name": "Glacier de la Girose",
+   "kind": "glacier",
+   "alt": null,
+   "desc": "Glacier de La Grave, au-dessus duquel monte le téléphérique des Glaciers de la Meije.",
+   "lat": 45.018,
+   "lon": 6.255
+  },
+  {
+   "name": "Lac du Chambon",
+   "kind": "lac",
+   "alt": 1040,
+   "desc": "Lac de barrage sur la Romanche, en aval de La Grave.",
+   "lat": 45.043,
+   "lon": 6.125
+  }
+ ],
+ "seracs": [
+  {
+   "name": "face nord de la Meije",
+   "lat": 45.0095,
+   "lon": 6.306
+  },
+  {
+   "name": "face nord de la Barre des Écrins",
+   "lat": 44.926,
+   "lon": 6.362
+  },
+  {
+   "name": "glacier de la Girose",
+   "lat": 45.012,
+   "lon": 6.27
+  },
+  {
+   "name": "face nord du Pic Sans Nom",
+   "lat": 44.8975,
+   "lon": 6.388
+  }
+ ]
+}

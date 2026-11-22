@@ -1,0 +1,39 @@
+name: Tests et site
+
+# À chaque envoi sur main : tests, construction, puis le site prêt à servir est publié
+# sur la branche « site ». Le serveur n'a plus qu'à la copier (scripts/deploy.sh).
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+
+      - name: Publier le site construit sur la branche « site »
+        if: github.event_name == 'push'
+        env:
+          TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+        run: |
+          cd dist
+          git init -q -b site
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Site construit depuis ${SHA::7}"
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${REPO}.git" site
