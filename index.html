@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Survol des Écrins</title>
+    <script>
+      // Adresse sans barre finale (…/ecrins) : on ajoute « / » pour que les fichiers relatifs se trouvent.
+      if (!location.pathname.endsWith('/') && !/\.[a-z0-9]+$/i.test(location.pathname)) {
+        location.replace(location.pathname + '/' + location.search + location.hash);
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-BuOi2bjk.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DzhlVx9E.css">
+  </head>
+  <body>
+    <canvas id="view"></canvas>
+
+    <section id="hud" aria-live="polite">
+      <div class="big"><span class="label">Altitude</span><span id="hud-alt">—</span></div>
+      <div class="big"><span class="label">Vitesse</span><span id="hud-speed">—</span></div>
+      <div class="allure"><button id="slower" type="button">Moins vite</button><span id="hud-allure">—</span><button id="faster" type="button">Plus vite</button></div>
+      <div><span class="label">Cap</span><span id="hud-heading">—</span></div>
+      <div><span class="label">Près de</span><span id="hud-place">—</span></div>
+      <div><span class="label">Destination</span><span id="hud-target">—</span></div>
+      <div id="hud-autopilot" hidden></div>
+      <div id="hud-view">Vue : devant</div>
+      <div id="hud-loading" hidden></div>
+    </section>
+
+    <div id="labels" aria-hidden="true"></div>
+    <canvas id="minimap" width="320" height="320" hidden></canvas>
+
+    <div id="message" role="status" hidden></div>
+
+    <aside id="panel">
+      <label for="dest">Destination</label>
+      <select id="dest"></select>
+      <button id="go" type="button">Y aller</button>
+      <label for="date">Date</label>
+      <input id="date" type="date" />
+      <label for="hour">Heure : <output id="hour-out" for="hour"></output></label>
+      <input id="hour" type="range" min="5" max="21.5" step="0.25" value="11" />
+      <p id="panel-note" hidden></p>
+    </aside>
+
+    <div id="paused" hidden>Pause · barre d'espace pour reprendre</div>
+    <button id="help-btn" type="button" aria-label="Aide et commandes" title="Aide et commandes">?</button>
+    <button id="unhide" type="button" hidden title="Retrouver l'affichage (touche h)">Afficher</button>
+
+    <div id="help" hidden role="dialog" aria-labelledby="help-title">
+      <div class="box">
+        <h2 id="help-title">Commandes</h2>
+        <table>
+          <tr><th>Flèche gauche, droite</th><td>Tourner</td></tr>
+          <tr><th>Flèche haut</th><td>Piquer (le nez descend)</td></tr>
+          <tr><th>Flèche bas</th><td>Cabrer (le nez monte)</td></tr>
+          <tr><th>+ et −</th><td>Plus vite, moins vite : Flânerie, Promenade, Voyage</td></tr>
+          <tr><th>Pavé numérique</th><td>Regarder : 8 devant, 4 à gauche, 6 à droite, 2 derrière, 0 dessous</td></tr>
+          <tr><th>i</th><td>Noms des lieux</td></tr>
+          <tr><th>m</th><td>Carte</td></tr>
+          <tr><th>h</th><td>Affichage immersif (rien que le paysage)</td></tr>
+          <tr><th>Barre d'espace</th><td>Pause</td></tr>
+        </table>
+        <p>Pour se laisser porter : choisir une destination à droite, puis « Y aller ». Une flèche gauche ou droite reprend la main.</p>
+        <button id="help-close" type="button">Reprendre le vol</button>
+      </div>
+    </div>
+
+    <footer id="credits">© IGN — cartes.gouv.fr · noms : © contributeurs OpenStreetMap, Overture Maps</footer>
+
+    <div id="start">
+      <h1>Survol des Écrins</h1>
+      <p>Un vol calme, en planeur, au-dessus du massif. Le planeur ne perd jamais d'altitude et évite tout seul le relief.</p>
+      <p>Au clavier, les flèches agissent comme un manche d'avion : flèche haut pour piquer, flèche bas pour cabrer.</p>
+      <p>Vitesse : touches + et −. Vues : pavé numérique 8 devant, 4 gauche, 6 droite, 2 arrière, 0 dessous. Touche i : noms des lieux. Touche m : carte. Touche h : rien que le paysage. Barre d'espace : pause. Le bouton « ? » rappelle tout cela.</p>
+      <p>Choisissez un lieu à droite et « Y aller » pour vous laisser porter.</p>
+      <button id="takeoff" type="button">Décoller</button>
+    </div>
+
+  </body>
+</html>
